@@ -83,25 +83,33 @@ section {
 }
 
 .img-fluid {
-    min-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+  min-width: 300px;
 }
 
 .img-profile {
-    width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
-    .img-profile {
-        height: 330px;
-        width: 330px;
-        margin-left: 65px;
-    }
+  .img-profile {
+    height: 330px;
+    width: 330px;
+    margin-left: 65px;
   }
+}
 
-  @media (max-width: 992px) {
-    .img-fluid {
-        max-width: 330px;
-    }
+@media (max-width: 992px) {
+  .img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    max-width: 330px;
   }
-
-  
+}
